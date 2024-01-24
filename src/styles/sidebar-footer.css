@@ -1,5 +1,6 @@
 body{
     background-color: #000;
+    font-family: var(--font-dm-sans);
 }
 
 .sidebar{
@@ -42,7 +43,6 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
 }
 
 .library{
@@ -71,7 +71,6 @@ body{
     border: 0px;
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -111,7 +110,6 @@ body{
 .section-playlist__content .text{
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist__content .title{
@@ -126,12 +124,11 @@ body{
 .section-playlist__content .section-playlist_button{
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: var(--bg-white);
     color: #000;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-transform: none;
     text-decoration: none;
     padding: 10px;
@@ -159,7 +156,7 @@ body{
     align-items: center;
     background-color: transparent;
     border: 1px solid #878787;
-    color: #fff;
+    color: var(--bg-white);
     font-weight: bold;
     cursor: pointer;
     width: 170px;
@@ -168,43 +165,46 @@ body{
     border-radius: 20px;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
+.footer {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 20px;
+    right: 0;
     background: linear-gradient(to right, #ff8a00, #da1b60);
-    text-decoration: none;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .text {
+   flex-shrink: 0;
+}
+.footer .text p{
+    font-family: var(--font-footer);
+}
+.footer .footer__title {
+    color: var(--bg-white);
+    text-transform: uppercase;
     font-weight: 400;
-    font-size: 14px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    
+    font-size: 12px;
+    margin-bottom: 10px;
 }
 
-.footer p {
-    color: #fff;
+.footer .footer__subtitle {
+    color: var(--bg-white);
+    font-size: 14px;
+    font-weight: 500;
 }
-.footer h1 {
-    color: #fff;
-    margin-top: 5px;
-}
-.footer__button{
-    margin-right: 6%;
-    background-color: #e6e2e2;
-    color: #000;
-    border-radius: 20px;
-    padding: 10px;
+
+.footer button {
+    background-color: var(--bg-white);
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
     border: 0px;
-    width: 160px;
-}
-
-.footer__button span{
-    font-weight: 700;
-    font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
 
